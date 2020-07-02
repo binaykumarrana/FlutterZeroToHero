@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/home/topic_page.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -7,9 +8,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home"),
       ),
-      body: Center(
-        child: Text('Home!'),
-      ),
+      body: TopicPage(),
     );
   }
 }
