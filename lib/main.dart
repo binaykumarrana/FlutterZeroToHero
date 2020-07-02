@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/splash_screen.dart';
 
 void main() {
-  runApp(Splash(),);
+  runApp(MyApp());
 }
 
-class Splash extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Center(
-        child: Text(
-          'Welcome to Flutter\nZero to Hero!',
-          textAlign: TextAlign.center,
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            color: Colors.red[600],
-            fontSize: 21.0,
-            fontFamily: 'Poppins',
-          ),
-        ),
-      ),
+    return MaterialApp(
+      home: SplashScreen(),
     );
   }
 }
