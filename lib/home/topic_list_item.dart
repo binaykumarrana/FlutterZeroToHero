@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/home/topic.dart';
+import 'package:widgets/theme/app_theme.dart';
 
 class TopicListItem extends StatelessWidget {
   final Topic topic;
@@ -9,7 +10,12 @@ class TopicListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(topic.name),
-    );
+        title: Text(topic.name),
+        onTap: () {
+          if (topic.name == "AppTheme") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => AppTheme()));
+          }
+        });
   }
 }
