@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/asset/asset_screen.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
 import 'package:widgets/theme/app_theme.dart';
@@ -19,6 +20,10 @@ class TopicListItem extends StatelessWidget {
           }else if(topic.name == "Custom Fonts") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => CustomFonts()));
+          }
+          else if(topic.name == "Assets") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => AssetDemo()));
           }
         });
   }
