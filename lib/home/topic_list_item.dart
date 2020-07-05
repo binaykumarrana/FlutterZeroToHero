@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/asset/asset_screen.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
+import 'package:widgets/text/text_label_demo.dart';
 import 'package:widgets/theme/app_theme.dart';
 
 class TopicListItem extends StatelessWidget {
@@ -15,15 +16,17 @@ class TopicListItem extends StatelessWidget {
         title: Text(topic.name),
         onTap: () {
           if (topic.name == "AppTheme") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => AppTheme()));
-          }else if(topic.name == "Custom Fonts") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => CustomFonts()));
-          }
-          else if(topic.name == "Assets") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => AssetDemo()));
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => AppTheme()));
+          } else if (topic.name == "Custom Fonts") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => CustomFonts()));
+          } else if (topic.name == "Assets") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => AssetDemo()));
+          } else if (topic.name == "Text/Label") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => TextLabelDemo()));
           }
         });
   }
