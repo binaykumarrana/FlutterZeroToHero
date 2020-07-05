@@ -1,9 +1,14 @@
 import 'dart:typed_data';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'dart:developer';
 
 class AssetDemo extends StatelessWidget {
+  Future<void> loadJson() async {
+    log('data: ${await rootBundle.loadString('assets/config.json')}');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
