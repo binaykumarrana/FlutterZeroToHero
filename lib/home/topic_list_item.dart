@@ -9,6 +9,8 @@ import 'package:widgets/icons/icon_demo.dart';
 import 'package:widgets/image/image_demo.dart';
 import 'package:widgets/input/input_demo.dart';
 import 'package:widgets/row/row_demo.dart';
+import 'package:widgets/tabs/default_tabs.dart';
+import 'package:widgets/tabs/tabs_demo.dart';
 import 'package:widgets/text/text_label_demo.dart';
 import 'package:widgets/theme/app_theme.dart';
 
@@ -49,13 +51,18 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Row") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => RowDemo()));
-          }
-          else if (topic.name == "Column") {
+          } else if (topic.name == "Column") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => ColumnDemo()));
-          }else if (topic.name == "Input Text") {
+          } else if (topic.name == "Input Text") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => InputDemo()));
+          } else if (topic.name == "DefaultTabsController") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => MyTabbedPage()));
+          }else if (topic.name == "TabsController") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => TabBarDemo()));
           }
         });
   }
