@@ -4,6 +4,7 @@ import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
+import 'package:widgets/icons/icon_demo.dart';
 import 'package:widgets/image/image_demo.dart';
 import 'package:widgets/text/text_label_demo.dart';
 import 'package:widgets/theme/app_theme.dart';
@@ -39,6 +40,9 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Image") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => ImageDemo()));
+          } else if (topic.name == "Icon") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => IconDemo()));
           }
         });
   }
