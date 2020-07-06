@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class IconDemo extends StatelessWidget {
+class ColumnDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,31 +14,20 @@ class IconDemo extends StatelessWidget {
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          "Icon",
+          "Column Demo",
           style: TextStyle(fontFamily: 'PoppinsSemiBold'),
         ),
       ),
       body: Column(children: <Widget>[
+        Center(child: Text("Item1")),
+        Center(child: RaisedButton(child: Text("Item2"))),
         Center(child: Icon(Icons.directions_transit)),
-        Center(child: Icon(
-          Icons.directions_transit,
-          size: 70,
-        )),
-        Center(child: Icon(Icons.directions_transit, color:Colors.green, size: 70,)),
-        Container(
-          padding: EdgeInsets.all(30),
-          child: Column(
-            children: <Widget>[
-              Icon(Icons.directions_transit, size: 40),
-              Text('Trains')
-            ],
-          ),
-        ),
-        IconButton(
+        Center(
+            child: IconButton(
           icon: Icon(Icons.volume_up),
-          tooltip: 'Increase volume by 10',
+          tooltip: 'Item4',
           onPressed: () {},
-        )
+        )),
       ]),
     );
   }
