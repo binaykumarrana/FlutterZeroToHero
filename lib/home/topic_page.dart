@@ -11,6 +11,7 @@ class TopicPage extends StatelessWidget {
       const Topic(name: 'Assets'),
       const Topic(name: 'Text/Label'),
       const Topic(name: 'Button'),
+      const Topic(name: 'Button Bar'),
       const Topic(name: 'Image'),
       const Topic(name: 'Icon'),
       const Topic(name: 'Row'),
