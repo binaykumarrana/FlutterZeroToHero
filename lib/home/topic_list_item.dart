@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/asset/asset_screen.dart';
+import 'package:widgets/bottomnav/bottom_nav_demo.dart';
 import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
 import 'package:widgets/column/column_demo.dart';
@@ -60,9 +61,12 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "DefaultTabsController") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => MyTabbedPage()));
-          }else if (topic.name == "TabsController") {
+          } else if (topic.name == "TabsController") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => TabBarDemo()));
+          } else if (topic.name == "Bottom Navigation") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => BottomNavDemo()));
           }
         });
   }
