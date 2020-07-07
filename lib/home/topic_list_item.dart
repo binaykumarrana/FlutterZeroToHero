@@ -14,6 +14,7 @@ import 'package:widgets/input/input_demo.dart';
 import 'package:widgets/list/custom_list.dart';
 import 'package:widgets/list/list_demo.dart';
 import 'package:widgets/row/row_demo.dart';
+import 'package:widgets/switch/switch_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
 import 'package:widgets/text/text_label_demo.dart';
@@ -83,6 +84,10 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "CheckBox") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => MyCheckboxPage()));
+          }
+          else if (topic.name == "Switch") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => SwitchDemo()));
           }
         });
   }
