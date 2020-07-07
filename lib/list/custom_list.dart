@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// This Widget is the main application widget.
-class MyApp extends StatelessWidget {
-  static const String _title = 'Flutter Code Sample';
+class CustomListDemo extends StatelessWidget {
+  static const String _title = 'Custom List';
 
   @override
   Widget build(BuildContext context) {

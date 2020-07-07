@@ -4,6 +4,7 @@ import 'package:widgets/bottomnav/bottom_nav_demo.dart';
 import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
 import 'package:widgets/column/column_demo.dart';
+import 'package:widgets/drawer/drawer_sample.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
 import 'package:widgets/icons/icon_demo.dart';
@@ -69,13 +70,15 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Bottom Navigation") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => BottomNavDemo()));
-          }
-          else if (topic.name == "Default ListView") {
+          } else if (topic.name == "Default ListView") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => ListDemo()));
-          }else if (topic.name == "Custom ListView") {
+          } else if (topic.name == "Custom ListView") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => CustomListDemo()));
+          } else if (topic.name == "Navigation Drawer") {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => MyApp()));
+                .push(MaterialPageRoute(builder: (context) => DrawerDemo()));
           }
         });
   }
