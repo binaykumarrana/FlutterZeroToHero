@@ -9,6 +9,8 @@ import 'package:widgets/home/topic.dart';
 import 'package:widgets/icons/icon_demo.dart';
 import 'package:widgets/image/image_demo.dart';
 import 'package:widgets/input/input_demo.dart';
+import 'package:widgets/list/custom_list.dart';
+import 'package:widgets/list/list_demo.dart';
 import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
@@ -67,6 +69,13 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Bottom Navigation") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => BottomNavDemo()));
+          }
+          else if (topic.name == "Default ListView") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => ListDemo()));
+          }else if (topic.name == "Custom ListView") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => MyApp()));
           }
         });
   }
