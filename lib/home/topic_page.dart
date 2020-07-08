@@ -22,6 +22,8 @@ class TopicPage extends StatelessWidget {
       const Topic(name: 'Bottom Navigation'),
       const Topic(name: 'Default ListView'),
       const Topic(name: 'Custom ListView'),
+      const Topic(name: "Search with List"),
+      const Topic(name: "Search with Grid"),
       const Topic(name: 'Navigation Drawer'),
       const Topic(name: 'CheckBox'),
       const Topic(name: 'Switch'),

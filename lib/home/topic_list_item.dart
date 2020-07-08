@@ -1,3 +1,4 @@
+import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:widgets/asset/asset_screen.dart';
 import 'package:widgets/bottomnav/bottom_nav_demo.dart';
@@ -13,6 +14,9 @@ import 'package:widgets/image/image_demo.dart';
 import 'package:widgets/input/input_demo.dart';
 import 'package:widgets/list/custom_list.dart';
 import 'package:widgets/list/list_demo.dart';
+import 'package:widgets/list/list_with_search.dart';
+import 'package:widgets/list/search_flappy.dart';
+import 'package:widgets/list/search_grid_list.dart';
 import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/switch/switch_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
@@ -88,6 +92,14 @@ class TopicListItem extends StatelessWidget {
           else if (topic.name == "Switch") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => SwitchDemo()));
+          }
+          else if (topic.name == "Search with List") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => SearchBarDemo()));
+          }
+          else if (topic.name == "Search with Grid") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => SearchBarGridDemo()));
           }
         });
   }
