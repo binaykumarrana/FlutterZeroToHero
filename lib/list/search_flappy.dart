@@ -20,6 +20,7 @@ class SearchBarDemo extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: SearchBar<Post>(
+            icon: Icon(Icons.search,color:Colors.white),
             debounceDuration: Duration(milliseconds: 200),
             cancellationText: Text("OK",style: TextStyle(fontFamily: 'PoppinsSemiBold'),),
             minimumChars: 3,

@@ -6,6 +6,7 @@ import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
 import 'package:widgets/checkbox/checkbox_demo.dart';
 import 'package:widgets/column/column_demo.dart';
+import 'package:widgets/datetime/date_time_demo.dart';
 import 'package:widgets/drawer/drawer_sample.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
@@ -18,6 +19,7 @@ import 'package:widgets/list/list_with_search.dart';
 import 'package:widgets/list/search_flappy.dart';
 import 'package:widgets/list/search_grid_list.dart';
 import 'package:widgets/row/row_demo.dart';
+import 'package:widgets/slider/slide_demo.dart';
 import 'package:widgets/switch/switch_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
@@ -88,18 +90,21 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "CheckBox") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => MyCheckboxPage()));
-          }
-          else if (topic.name == "Switch") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => SwitchDemo()));
-          }
-          else if (topic.name == "Search with List") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => SearchBarDemo()));
-          }
-          else if (topic.name == "Search with Grid") {
+          } else if (topic.name == "Switch") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => SwitchDemo()));
+          } else if (topic.name == "Search with List") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => SearchBarDemo()));
+          } else if (topic.name == "Search with Grid") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => SearchBarGridDemo()));
+          } else if (topic.name == "Slider") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => SlideDemo()));
+          } else if (topic.name == "Date&Time Picker") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => DateTimePickerDemo()));
           }
         });
   }
