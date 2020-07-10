@@ -18,6 +18,7 @@ import 'package:widgets/list/list_demo.dart';
 import 'package:widgets/list/list_with_search.dart';
 import 'package:widgets/list/search_flappy.dart';
 import 'package:widgets/list/search_grid_list.dart';
+import 'package:widgets/radio/radio_demo.dart';
 import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/slider/slide_demo.dart';
 import 'package:widgets/switch/switch_demo.dart';
@@ -105,6 +106,10 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Date&Time Picker") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => DateTimePickerDemo()));
+          }
+          else if (topic.name == "Radio") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => RadioDemo()));
           }
         });
   }
