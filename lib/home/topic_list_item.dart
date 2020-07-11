@@ -1,5 +1,6 @@
 import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:widgets/alert/alert_dialog.dart';
 import 'package:widgets/asset/asset_screen.dart';
 import 'package:widgets/bottomnav/bottom_nav_demo.dart';
 import 'package:widgets/button/button_bar.dart';
@@ -110,6 +111,10 @@ class TopicListItem extends StatelessWidget {
           else if (topic.name == "Radio") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => RadioDemo()));
+          }
+          else if (topic.name == "AlertDialog") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => AlertDemo()));
           }
         });
   }
