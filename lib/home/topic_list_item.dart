@@ -9,6 +9,8 @@ import 'package:widgets/checkbox/checkbox_demo.dart';
 import 'package:widgets/column/column_demo.dart';
 import 'package:widgets/datetime/date_time_demo.dart';
 import 'package:widgets/drawer/drawer_sample.dart';
+import 'package:widgets/expansionpanel/expainsion_list.dart';
+import 'package:widgets/expansionpanel/expainsion_tile.dart';
 import 'package:widgets/font/font_screen.dart';
 import 'package:widgets/home/topic.dart';
 import 'package:widgets/icons/icon_demo.dart';
@@ -115,6 +117,18 @@ class TopicListItem extends StatelessWidget {
           else if (topic.name == "AlertDialog") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => AlertDemo()));
+          }
+          else if (topic.name == "BottomSheet") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => BottomSheet()));
+          }
+          else if (topic.name == "ExpansionPanelTile") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => ExpTileDemo()));
+          }
+          else if (topic.name == "ExpansionPanelList") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => ExpTileListDemo()));
           }
         });
   }
