@@ -35,7 +35,6 @@ class TopicPage extends StatelessWidget {
       const Topic(name: 'ExpansionPanelTile'),
       const Topic(name: 'ExpansionPanelList'),
       const Topic(name: 'SnackBar'),
-      const Topic(name: 'SimpleDialog'),
       const Topic(name: 'Card'),
       const Topic(name: 'Chips'),
       const Topic(name: 'CircularProgressIndicator'),

@@ -5,6 +5,7 @@ import 'package:widgets/asset/asset_screen.dart';
 import 'package:widgets/bottomnav/bottom_nav_demo.dart';
 import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
+import 'package:widgets/cards/card_demo.dart';
 import 'package:widgets/checkbox/checkbox_demo.dart';
 import 'package:widgets/column/column_demo.dart';
 import 'package:widgets/datetime/date_time_demo.dart';
@@ -24,6 +25,7 @@ import 'package:widgets/list/search_grid_list.dart';
 import 'package:widgets/radio/radio_demo.dart';
 import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/slider/slide_demo.dart';
+import 'package:widgets/snakbar/snackbar_demo.dart';
 import 'package:widgets/switch/switch_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
@@ -109,26 +111,28 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Date&Time Picker") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => DateTimePickerDemo()));
-          }
-          else if (topic.name == "Radio") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => RadioDemo()));
-          }
-          else if (topic.name == "AlertDialog") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => AlertDemo()));
-          }
-          else if (topic.name == "BottomSheet") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => BottomSheet()));
-          }
-          else if (topic.name == "ExpansionPanelTile") {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => ExpTileDemo()));
-          }
-          else if (topic.name == "ExpansionPanelList") {
+          } else if (topic.name == "Radio") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => RadioDemo()));
+          } else if (topic.name == "AlertDialog") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => AlertDemo()));
+          } else if (topic.name == "BottomSheet") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => BottomSheet()));
+          } else if (topic.name == "ExpansionPanelTile") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => ExpTileDemo()));
+          } else if (topic.name == "ExpansionPanelList") {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => ExpTileListDemo()));
+          } else if (topic.name == "SnackBar") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => SnackBarDemo()));
+          }
+          else if (topic.name == "Card") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => CardsDemo()));
           }
         });
   }
