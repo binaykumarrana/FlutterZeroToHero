@@ -7,6 +7,7 @@ import 'package:widgets/button/button_bar.dart';
 import 'package:widgets/button/button_demo.dart';
 import 'package:widgets/cards/card_demo.dart';
 import 'package:widgets/checkbox/checkbox_demo.dart';
+import 'package:widgets/chips/chips_demo.dart';
 import 'package:widgets/column/column_demo.dart';
 import 'package:widgets/datetime/date_time_demo.dart';
 import 'package:widgets/drawer/drawer_sample.dart';
@@ -133,6 +134,10 @@ class TopicListItem extends StatelessWidget {
           else if (topic.name == "Card") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => CardsDemo()));
+          }
+          else if (topic.name == "Chips") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => ChipsDemo()));
           }
         });
   }
