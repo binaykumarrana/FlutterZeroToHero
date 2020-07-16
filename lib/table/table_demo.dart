@@ -5,6 +5,7 @@ class TableDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Table"),
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,

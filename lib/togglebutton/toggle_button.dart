@@ -6,6 +6,7 @@ class ToggleDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Toggle"),
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,

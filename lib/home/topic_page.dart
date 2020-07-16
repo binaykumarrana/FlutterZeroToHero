@@ -44,6 +44,8 @@ class TopicPage extends StatelessWidget {
       const Topic(name: 'Stepper'),
       const Topic(name: 'ToggleButtons'),
       const Topic(name: 'Table'),
+      const Topic(name: 'DataTable'),
+      const Topic(name: 'Sqflite/Sqlite'),
       const Topic(name: 'PopupMenuButton'),
       const Topic(name: 'Login'),
     ];
