@@ -23,6 +23,8 @@ import 'package:widgets/list/list_demo.dart';
 import 'package:widgets/list/list_with_search.dart';
 import 'package:widgets/list/search_flappy.dart';
 import 'package:widgets/list/search_grid_list.dart';
+import 'package:widgets/progressbar/circular_prog.dart';
+import 'package:widgets/progressbar/progressbar_demo.dart';
 import 'package:widgets/radio/radio_demo.dart';
 import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/slider/slide_demo.dart';
@@ -138,6 +140,13 @@ class TopicListItem extends StatelessWidget {
           else if (topic.name == "Chips") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => ChipsDemo()));
+          }
+          else if (topic.name == "LinearProgressIndicator") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => LinearProgressDemo()));
+          }else if (topic.name == "CircularProgressIndicator") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => CircleProgressDemo()));
           }
         });
   }
