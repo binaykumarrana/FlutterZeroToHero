@@ -30,10 +30,12 @@ import 'package:widgets/row/row_demo.dart';
 import 'package:widgets/slider/slide_demo.dart';
 import 'package:widgets/snakbar/snackbar_demo.dart';
 import 'package:widgets/switch/switch_demo.dart';
+import 'package:widgets/table/table_demo.dart';
 import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
 import 'package:widgets/text/text_label_demo.dart';
 import 'package:widgets/theme/app_theme.dart';
+import 'package:widgets/togglebutton/toggle_button.dart';
 import 'package:widgets/tooltip/tooltip.dart';
 
 class TopicListItem extends StatelessWidget {
@@ -154,6 +156,14 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "Login") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => Login()));
+          }
+          else if (topic.name == "ToggleButtons") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => ToggleDemo()));
+          }
+          else if (topic.name == "Table") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => TableDemo()));
           }
         });
   }
