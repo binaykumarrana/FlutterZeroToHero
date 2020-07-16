@@ -42,7 +42,8 @@ class TopicPage extends StatelessWidget {
       const Topic(name: 'LinearProgressIndicator'),
       const Topic(name: 'Tooltip'),
       const Topic(name: 'Stepper'),
-      const Topic(name: 'PopupMenuButton')
+      const Topic(name: 'PopupMenuButton'),
+      const Topic(name: 'Login'),
     ];
   }
 

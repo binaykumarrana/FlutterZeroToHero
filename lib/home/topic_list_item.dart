@@ -1,4 +1,3 @@
-import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:widgets/alert/alert_dialog.dart';
 import 'package:widgets/asset/asset_screen.dart';
@@ -14,15 +13,16 @@ import 'package:widgets/drawer/drawer_sample.dart';
 import 'package:widgets/expansionpanel/expainsion_list.dart';
 import 'package:widgets/expansionpanel/expainsion_tile.dart';
 import 'package:widgets/font/font_screen.dart';
+import 'package:widgets/gridview/grid_demo.dart';
 import 'package:widgets/home/topic.dart';
 import 'package:widgets/icons/icon_demo.dart';
 import 'package:widgets/image/image_demo.dart';
 import 'package:widgets/input/input_demo.dart';
 import 'package:widgets/list/custom_list.dart';
 import 'package:widgets/list/list_demo.dart';
-import 'package:widgets/list/list_with_search.dart';
 import 'package:widgets/list/search_flappy.dart';
 import 'package:widgets/list/search_grid_list.dart';
+import 'package:widgets/login/login_sample.dart';
 import 'package:widgets/progressbar/circular_prog.dart';
 import 'package:widgets/progressbar/progressbar_demo.dart';
 import 'package:widgets/radio/radio_demo.dart';
@@ -34,6 +34,7 @@ import 'package:widgets/tabs/default_tabs.dart';
 import 'package:widgets/tabs/tabs_demo.dart';
 import 'package:widgets/text/text_label_demo.dart';
 import 'package:widgets/theme/app_theme.dart';
+import 'package:widgets/tooltip/tooltip.dart';
 
 class TopicListItem extends StatelessWidget {
   final Topic topic;
@@ -132,21 +133,27 @@ class TopicListItem extends StatelessWidget {
           } else if (topic.name == "SnackBar") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => SnackBarDemo()));
-          }
-          else if (topic.name == "Card") {
+          } else if (topic.name == "Card") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => CardsDemo()));
-          }
-          else if (topic.name == "Chips") {
+          } else if (topic.name == "Chips") {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => ChipsDemo()));
-          }
-          else if (topic.name == "LinearProgressIndicator") {
+          } else if (topic.name == "LinearProgressIndicator") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => LinearProgressDemo()));
+          } else if (topic.name == "CircularProgressIndicator") {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => CircleProgressDemo()));
+          } else if (topic.name == "GridView") {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => LinearProgressDemo()));
-          }else if (topic.name == "CircularProgressIndicator") {
+                .push(MaterialPageRoute(builder: (context) => GridDemo()));
+          } else if (topic.name == "Tooltip") {
             Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => CircleProgressDemo()));
+                .push(MaterialPageRoute(builder: (context) => TooltipDemo()));
+          } else if (topic.name == "Login") {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Login()));
           }
         });
   }
